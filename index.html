@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <link rel="stylesheet" href="./scr/style.css">
+</head>
+<body>
+    <div class="min-h-screen bg-background px-5 py-6">
+
+  <header class="flex items-center justify-between mb-5">
+   <div class="flex">
+     <button class="text-2xl">
+      <img src="./assets/hamburger.svg" class="w-6 h-6" alt="Icon">
+    </button>
+    <nav class="space-y-1 text-sm uppercase tracking-wide mb-6 md:flex m-7 flex-row ml-0 hidden md:block">
+    <a href="#" class="block ml-14">Home</a>
+    <a href="#" class="block ml-14">Collection</a>
+    <a href="#" class="block ml-14">New</a>
+
+   </div>
+
+    <button class="text-xl absolute left-41 md:left-1/2">
+      <img src="./assets/logo.svg" class="w-6 h-6 mx-2" alt="Icon">
+    </button>
+
+    <div class="flex items-center gap-3">
+        <button class="size-10 rounded-full bg-text hidden md:block text-white flex items-center justify-center">
+            <img src="./assets/wishlist.svg" class="w-6 h-6 mx-2" alt="Icon">
+        </button>
+        <button class="size-10 rounded-2xl w-14 bg-text text-white flex items-center justify-center z-20 hidden md:block">Cart</button>
+      <button class="size-10 rounded-full -ml-4 border border-border bg-surface flex items-center justify-center shadow-card">
+        <img src="./assets/cart.svg" class="w-10 h-10" alt="Icon">
+      </button>
+
+      <button class="size-10 rounded-full bg-text text-white flex items-center justify-center">
+        <img src="./assets/account.svg" class="w-3 h-3" alt="Icon">
+      </button>
+    </div>
+      </nav>
+  </header>
+
+  <nav class="space-y-1 text-sm uppercase tracking-wide mb-6">
+    <a href="#" class="block mb-3">Men</a>
+    <a href="#" class="block mb-3">Women</a>
+    <a href="#" class="block mb-3">Kids</a>
+  </nav>
+
+
+  <div class="flex items-center bg-secondary rounded-md xl:w-[300px] overflow-hidden mb-12">
+    <div class="px-4 mb-1 text-text-muted ">⌕</div>
+
+    <input
+      type="text"
+      placeholder=""
+      class="sm:w-full bg-transparent py-2 outline-none text-sm"/>
+
+    <button class="px-4 text-sm text-text-muted border-l border-border xl:w-[300px] ">
+      Search
+    </button>
+  </div>
+
+  <section class="mb-10 md:flex">
+    <div>
+      
+      <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+        New<br />
+        Collection
+      </h1>
+  
+      <p class="mt-3 text-text-muted">
+        Summer <br />
+        2024
+      </p>
+    </div>
+    <div>
+      <section class="md:flex-row">
+        <div class="flex gap-4 overflow-x-auto pb-4 snap-x md:pl-14">
+    
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img1.png"
+              class="h-52 w-full object-cover md:h-auto"
+              alt=""
+            />
+    
+            <div class="p-3 block md:hidden">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <div>
+                  <h3 class="font-semibold text-sm">
+                    Full Sleeve
+                  </h3>
+                </div>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+    
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img2.png"
+              class="h-52 w-full object-cover md:h-auto"
+              alt=""
+            />
+    
+            <div class="p-3 block md:hidden">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <h3 class="font-semibold text-sm">
+                  Full Sleeve
+                </h3>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="mt-8">
+        <button
+          class="flex items-center gap-6 border bg-secondary border-text px-6 py-3 uppercase tracking-wide"
+        >
+          Go To Shop
+          <span class="text-xl">→</span>
+        </button>
+      </div>
+      </section>
+
+      
+
+    </div>
+  </section>
+
+<section class="pt-1">
+        <div class="flex">
+      
+      <div>
+        <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+        New<br />
+        This Week
+      </h1>
+      </div>
+
+
+      <div class=" hidden md:block absolute right-0 pt-10 underline text-text-muted ">
+        <a href="#">See All</a>
+      </div>
+    </div>
+       <section class="md:flex-row">
+        <div class="flex gap-4 overflow-x-auto snap-x mt-10">
+    
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img3.png"
+              class="h-80 w-full object-cover"
+              alt=""
+            />
+    
+            <div class="p-3 block">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <div>
+                  <h3 class="font-semibold text-sm">
+                    Full Sleeve
+                  </h3>
+                </div>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+    
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img4.png"
+              class="h-80 w-full object-cover"
+              alt=""
+            />
+    
+            <div class="p-3 block ">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <h3 class="font-semibold text-sm">
+                  Full Sleeve
+                </h3>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img5.png"
+              class="h-80 w-full object-cover "
+              alt=""
+            />
+    
+            <div class="p-3 block ">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <h3 class="font-semibold text-sm">
+                  Full Sleeve
+                </h3>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+          <article
+            class="min-w-[170px] bg-surface border border-border shadow-card snap-start"
+          >
+            <img
+              src="./assets/img6.png"
+              class="h-80 w-full object-cover "
+              alt=""
+            />
+    
+            <div class="p-3 block ">
+              <p class="text-xs text-text-muted">
+                Cotton T-Shirt
+              </p>
+    
+              <div class="flex justify-between items-end mt-1">
+                <h3 class="font-semibold text-sm">
+                  Full Sleeve
+                </h3>
+    
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        
+      </section>
+
+      <div class="p-8 cursor-pointer">
+        <img 
+        src="./assets/pagination.svg" 
+        alt=""
+        class=" absolute left-35 md:left-160"
+        >
+      </div>
+      </section>
+
+      <section class="pt-10">
+  <!-- Heading -->
+  <header class="mb-12">
+    <h1
+      class="font-heading text-5xl md:text-7xl uppercase leading-[0.85] color-text"
+    >
+      XIV <br />
+      Collections <br />
+      23-24
+    </h1>
+  </header>
+
+  <!-- Filters -->
+  <div
+    class="mb-8 flex flex-col gap-6 border-b border-border pb-4 md:flex-row md:items-end md:justify-between"
+  >
+    <!-- Categories -->
+    <nav class="flex gap-8 text-text-muted">
+      <button class="color-text">All</button>
+      <button>Men</button>
+      <button>Women</button>
+      <button>KID</button>
+    </nav>
+
+    <!-- Sorting -->
+    <div class="flex gap-16 text-sm">
+      <div>
+        <p class="mb-2 color-text">Filters(+)</p>
+      </div>
+
+      <div class="text-text-muted">
+        <p class="mb-2 color-text">Sorts(-)</p>
+        <button class="block">Less to more</button>
+        <button class="block">More to Less</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div
+    class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
+  >
+    <article
+      class="bg-surface border border-border shadow-card overflow-hidden"
+    >
+      <img
+        src="./assets/img7.png"
+        alt=""
+        class="h-[450px] w-full object-cover"
+      />
+
+      <div class="p-4">
+        <p class="text-sm text-text-muted">
+          Cotton T-Shirt
+        </p>
+
+        <div class="mt-2 flex items-center justify-between">
+          <h3 class="font-semibold">
+            Full Sleeve
+          </h3>
+
+          <span class="font-semibold">
+            $199
+          </span>
+        </div>
+      </div>
+    </article>
+
+    <article
+      class="bg-surface border border-border shadow-card overflow-hidden"
+    >
+      <img
+        src="./assets/img8.png"
+        alt=""
+        class="h-[450px] w-full object-cover"
+      />
+
+      <div class="p-4">
+        <p class="text-sm text-text-muted">
+          Cotton T-Shirt
+        </p>
+
+        <div class="mt-2 flex items-center justify-between">
+          <h3 class="font-semibold">
+            Full Sleeve
+          </h3>
+
+          <span class="font-semibold">
+            $199
+          </span>
+        </div>
+      </div>
+    </article>
+
+    <article
+      class="bg-surface border border-border shadow-card overflow-hidden"
+    >
+      <img
+        src="./assets/img9.png"
+        alt=""
+        class="h-[450px] w-full object-cover"
+      />
+
+      <div class="p-4">
+        <p class="text-sm text-text-muted">
+          Cotton T-Shirt
+        </p>
+
+        <div class="mt-2 flex items-center justify-between">
+          <h3 class="font-semibold">
+            Full Sleeve
+          </h3>
+
+          <span class="font-semibold">
+            $199
+          </span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
