@@ -9,7 +9,7 @@
   --color-secondary: #D9D9D9;
   --color-accent: #10b981;
 
-  --color-background: #f8fafc;
+  --color-background: #f8f8f8;
   --color-surface: #ffffff;
 
   --color-text: #000;
@@ -22,8 +22,8 @@
   --color-danger: #ef4444;
 
   /* Fonts */
-  --font-sans: "Inter", sans-serif;
-  --font-heading: "Poppins", sans-serif;
+  --font-sans: "Raleway", sans-serif , 'Operator-caska';
+  --font-heading: "Abril Fatface", serif;
 
   /* Radius */
   /* --radius-sm: 0.375rem;
