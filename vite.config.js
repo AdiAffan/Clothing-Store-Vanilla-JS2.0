@@ -7,4 +7,5 @@ export default defineConfig({
     tailwindcss(),
   ],
      root: new URL('./src', import.meta.url).pathname,
+     base: '/Clothing-Store-Vanilla-JS2.0/'
 })
