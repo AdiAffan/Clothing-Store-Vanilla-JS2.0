@@ -15,15 +15,49 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 
-<body class=" tracking-wide leading-relaxed">
-  <div class="min-h-screen bg-background">
+<body class="leading-relaxed bg-grain">
+  <div id="sidebar"
+    class=" tracking-[0.1rem] fixed top-0 left-0 w-64 h-screen bg-grain bg-secondary bg-blend-multiply z-999 p-8  -translate-x-full transition-transform duration-300 ease-in-out">
+
+    <button id="close-sidebar" class="absolute top-5 right-5 text-3xl text-text hover:text-text-muted transition">
+      &times;
+    </button>
+
+
+    <nav class="mt-16">
+      <ul class="flex flex-col gap-4">
+        <li>
+          <a href="#" class="block   px-5 py-4 text-text transition-all duration-300 hover:bg-grain hover:text-text">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block   px-5 py-4 text-text transition-all duration-300 hover:bg-grain hover:text-text">
+            Collection
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block px-5 py-4 text-text transition-all duration-300 hover:bg-grain hover:text-text">
+            New
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="min-h-screen bg-grain tracking-[0.15rem]">
     <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 py-6">
       <header class="flex items-center justify-between mb-5">
         <div class="flex">
-          <button class="text-2xl">
+          <button id="hamburger" class="text-2xl ">
             <img src="assets/hamburger.svg" class="w-6 h-6" alt="Icon">
           </button>
-          <nav class="space-y-1 text-sm uppercase tracking-wide mb-6 md:flex m-7 flex-row ml-0 hidden md:block">
+
+
+
+
+          <nav class="space-y-1 text-sm uppercase tracking-[0.15] mb-6 md:flex m-7 flex-row ml-0 hidden md:block">
             <a href="" class="block ml-14">Home</a>
             <a href="" class="block ml-14">Collection</a>
             <a href="" class="block ml-14">New</a>
@@ -40,8 +74,7 @@
           </button>
           <button
             class="size-10 rounded-2xl w-14 bg-text text-white flex items-center justify-center z-20 hidden md:block">Cart</button>
-          <button
-            class="size-10 rounded-full -ml-4 border border-border bg-surface flex items-center justify-center shadow-card">
+          <button class="size-10 rounded-full -ml-4  bg-surface flex items-center justify-center ">
             <img src="assets/cart.svg" class="w-10 h-10" alt="Icon">
           </button>
 
@@ -52,15 +85,15 @@
         </nav>
       </header>
 
-      <nav class="space-y-1 text-sm uppercase tracking-wide mb-6">
+      <nav class="space-y-1 text-sm uppercase tracking-[0.15rem] mb-6">
         <a href="" class="block mb-3">Men</a>
         <a href="" class="block mb-3">Women</a>
         <a href="" class="block mb-3">Kids</a>
       </nav>
 
 
-      <div class="flex items-center bg-secondary rounded-md xl:w-[300px] overflow-hidden mb-12">
-        <div class="px-4 pt-0.5 mb-1 text-text-muted "><img src="assets/search.svg" alt=""></div>
+      <div class="flex items-center bg-secondary xl:w-[300px] overflow-hidden mb-12">
+        <div class="pl-4 pr-4 pt-0.5 mb-1 text-text-muted "><img src="assets/search.svg" alt=""></div>
 
         <input type="text" placeholder="" class="sm:w-full bg-transparent py-2 outline-none text-sm" />
 
@@ -71,11 +104,12 @@
 
       <section class="mb-10 md:flex">
 
-        <div class="grid grid-cols-5 grid-rows-5 gap-4">
-          <div class="col-span-2 row-span-4">
+
+        <div class="grid grid-cols-2 grid-rows-7 gap-4 md:hidden">
+          <div class="col-span-2 row-span-2">
             <div>
 
-              <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+              <h1 class="font-heading text-4xl leading-[0.85] uppercase color-text">
                 New<br />
                 Collection
               </h1>
@@ -86,70 +120,159 @@
               </p>
             </div>
           </div>
-          <div class="col-span-3 row-span-5 col-start-3">
-            <div>
-              <section class="md:flex-row">
-                <div class="flex gap-4 overflow-x-auto pb-4 snap-x">
+          <div class="col-span-2 row-span-4 row-start-3">
+            <div class="col-span-3 row-span-5 col-start-3">
+              <div>
+                <section class="md:flex-row">
+                  <div class="flex gap-4 overflow-x-auto pb-4 snap-x">
 
-                  <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
-                    <img src="assets/img1.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+                    <article class="min-w-[170px] bg-background h-full snap-start">
+                      <img src="assets/img1.png" class="h-52 w-full object-cover md:h-auto" alt="" />
 
-                    <div class="p-3 block md:hidden">
-                      <p class="text-xs text-text-muted">
-                        Cotton T-Shirt
-                      </p>
+                      <div class="p-3 block md:hidden">
+                        <p class="text-xs text-text-muted">
+                          Cotton T-Shirt
+                        </p>
 
-                      <div class="flex justify-between items-end mt-1">
-                        <div>
+                        <div class="flex justify-between items-end mt-1">
+                          <div>
+                            <h3 class="font-semibold text-sm font-sans">
+                              Full Sleeve
+                            </h3>
+                          </div>
+
+                          <span class="font-semibold">
+                            $199
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="min-w-[170px] bg-background  snap-start">
+                      <img src="assets/img2.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+
+                      <div class="p-3 block md:hidden">
+                        <p class="text-xs text-text-muted">
+                          Cotton T-Shirt
+                        </p>
+
+                        <div class="flex justify-between items-end mt-1">
                           <h3 class="font-semibold text-sm font-sans">
                             Full Sleeve
                           </h3>
+
+                          <span class="font-semibold">
+                            $199
+                          </span>
                         </div>
-
-                        <span class="font-semibold">
-                          $199
-                        </span>
                       </div>
-                    </div>
-                  </article>
+                    </article>
 
-                  <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
-                    <img src="assets/img2.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+                  </div>
 
-                    <div class="p-3 block md:hidden">
-                      <p class="text-xs text-text-muted">
-                        Cotton T-Shirt
-                      </p>
-
-                      <div class="flex justify-between items-end mt-1">
-                        <h3 class="font-semibold text-sm font-sans">
-                          Full Sleeve
-                        </h3>
-
-                        <span class="font-semibold">
-                          $199
-                        </span>
-                      </div>
-                    </div>
-                  </article>
-
-                </div>
-
-              </section>
+                </section>
 
 
 
+              </div>
             </div>
           </div>
-          <div class="col-span-2 row-start-5">
-            <div class="">
-              <button class="flex items-center gap-6 border bg-secondary border-text px-6 py-3 uppercase tracking-wide">
+          <div class="col-span-2 row-start-7">
+            <div class="flex mt-4 justify-start">
+              <button class="flex bg-secondary p-2 w-fit">
                 Go To Shop
-                <span class="text-xl"><img src="assets/arrow.svg" alt=""></span>
+                <span class="text-xl"><img src="assets/arrow.svg" alt="" class="mt-2 mx-5"></span>
               </button>
+              <img src="assets/pagination.svg" alt="" class="hidden md:block">
             </div>
           </div>
         </div>
+
+
+
+       <div class="hidden md:grid grid-cols-5 grid-rows-5 gap-4">
+          <div class="col-span-2 row-span-3">
+            <div>
+
+              <h1 class="font-heading text-4xl leading-[0.85] uppercase color-text">
+                New<br />
+                Collection
+              </h1>
+
+              <p class="mt-3 text-text-muted">
+                Summer <br />
+                2024
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 row-span-4 col-start-3">
+            <div class="col-span-3 row-span-5 col-start-3">
+              <div>
+                <section class="md:flex-row">
+                  <div class="flex gap-4 overflow-x-auto pb-4 snap-x">
+
+                    <article class="min-w-[170px] bg-background h-full snap-start">
+                      <img src="assets/img1.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+
+                      <div class="p-3 block md:hidden">
+                        <p class="text-xs text-text-muted">
+                          Cotton T-Shirt
+                        </p>
+
+                        <div class="flex justify-between items-end mt-1">
+                          <div>
+                            <h3 class="font-semibold text-sm font-sans">
+                              Full Sleeve
+                            </h3>
+                          </div>
+
+                          <span class="font-semibold">
+                            $199
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="min-w-[170px] bg-background  snap-start">
+                      <img src="assets/img2.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+
+                      <div class="p-3 block md:hidden">
+                        <p class="text-xs text-text-muted">
+                          Cotton T-Shirt
+                        </p>
+
+                        <div class="flex justify-between items-end mt-1">
+                          <h3 class="font-semibold text-sm font-sans">
+                            Full Sleeve
+                          </h3>
+
+                          <span class="font-semibold">
+                            $199
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+
+                  </div>
+
+                </section>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-span-2 row-start-4">
+            <div class="flex mt-4 justify-around">
+              <button class="flex bg-secondary p-2 w-fit">
+                Go To Shop
+                <span class="text-xl"><img src="assets/arrow.svg" alt="" class="mt-2 mx-5"></span>
+              </button>
+              <img src="assets/pagination.svg" alt="" class="hidden md:block">
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -159,21 +282,21 @@
         <div class="flex">
 
           <div>
-            <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+            <h1 class="font-heading text-4xl leading-[0.85] uppercase color-text">
               New<br />
               This Week
             </h1>
           </div>
 
 
-          <div class=" hidden md:block absolute right-0 pt-10 underline text-text-muted ">
+          <div class=" hidden md:block absolute right-0 mr-20  text-text-muted ">
             <a href="">See All</a>
           </div>
         </div>
         <section class="md:flex-row">
           <div class="flex gap-4 overflow-x-auto snap-x mt-10">
 
-            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+            <article class="min-w-[170px]  snap-start">
               <img src="assets/img3.png" class="h-80 w-full object-cover" alt="" />
 
               <div class="p-3 block">
@@ -195,7 +318,7 @@
               </div>
             </article>
 
-            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+            <article class="min-w-[170px]    snap-start">
               <img src="assets/img4.png" class="h-80 w-full object-cover" alt="" />
 
               <div class="p-3 block ">
@@ -214,7 +337,7 @@
                 </div>
               </div>
             </article>
-            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+            <article class="min-w-[170px]    snap-start">
               <img src="assets/img5.png" class="h-80 w-full object-cover " alt="" />
 
               <div class="p-3 block ">
@@ -233,7 +356,7 @@
                 </div>
               </div>
             </article>
-            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+            <article class="min-w-[170px]    snap-start">
               <img src="assets/img6.png" class="h-80 w-full object-cover " alt="" />
 
               <div class="p-3 block ">
@@ -263,18 +386,17 @@
       </section>
 
       <section class="pt-10">
-        <!-- Heading -->
+
         <header class="mb-12">
-          <h1 class="font-heading text-5xl md:text-7xl uppercase leading-[0.85] color-text">
+          <h1 class="font-heading text-4xl uppercase leading-[0.85] color-text">
             XIV <br />
             Collections <br />
             23-24
           </h1>
         </header>
 
-        <!-- Filters -->
         <div class="mb-8 flex flex-col gap-6 border-b border-border pb-4 md:flex-row md:items-end md:justify-between">
-          <!-- Categories -->
+
           <nav class="flex gap-8 text-text-muted">
             <button class="color-text">All</button>
             <button>Men</button>
@@ -282,7 +404,7 @@
             <button>KID</button>
           </nav>
 
-          <!-- Sorting -->
+
           <div class="flex gap-16 text-sm">
             <div>
               <p class="mb-2 color-text">Filters(+)</p>
@@ -297,16 +419,17 @@
         </div>
 
 
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <article class="bg-surface border border-border shadow-card overflow-hidden">
-            <img src="assets/img7.png" alt="" class="h-[450px] w-full object-cover" />
+        <div
+          class="grid grid-cols-2 gap-6 md:grid-cols-2 xl:grid-cols-3 [&>article>img]:md:h-[450px] [&>article>img]:h-[230px]">
+          <article class="overflow-hidden">
+            <img src="assets/img7.png" alt="" class="  w-full object-cover" />
 
             <div class="p-4">
               <p class="text-sm text-text-muted">
                 Cotton T-Shirt
               </p>
 
-              <div class="mt-2 flex items-center justify-between">
+              <div class="mt-2 flex flex-col md:flex-row  justify-between">
                 <h3 class="font-semibold font-sans">
                   Full Sleeve
                 </h3>
@@ -318,7 +441,7 @@
             </div>
           </article>
 
-          <article class="bg-surface border border-border shadow-card overflow-hidden">
+          <article class="   overflow-hidden">
             <img src="assets/img1.png" alt="" class="h-[450px] w-full object-cover" />
 
             <div class="p-4">
@@ -338,7 +461,7 @@
             </div>
           </article>
 
-          <article class="bg-surface border border-border shadow-card overflow-hidden">
+          <article class="   overflow-hidden">
             <img src="assets/img9.png" alt="" class="h-[450px] w-full object-cover" />
 
             <div class="p-4">
@@ -360,16 +483,16 @@
         </div>
       </section>
 
-      <section class="bg-background py-20 px-6">
+      <section class=" py-20 px-6">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-5xl font-light uppercase tracking-wide">
+            <h2 class="text-3xl md:text-5xl font-light uppercase tracking-[0.2rem]">
               Our Approach to Fashion Design
             </h2>
 
-            <p class="max-w-2xl mx-auto mt-4 text-sm text-gray-500">
-              At Elegant Vogue, we blend creativity with craftsmanship to create
-              fashion that transcends trends and stands the test of time.
+            <p class="max-w-2xl mx-auto mt-4 text-sm text-gray-500 tracking-[0.2rem]">
+              at elegant vogue , we blend creativity with craftsmanship to create fashion that transcends trends and
+              stands the test of time each design is meticulously crafted, ensuring the highest quelity exqulsite finish
             </p>
           </div>
 
@@ -486,7 +609,19 @@
   </footer>
 
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('close-sidebar');
 
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.remove('-translate-x-full');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.add('-translate-x-full');
+    });
+  </script>
 </body>
 
 </html>
