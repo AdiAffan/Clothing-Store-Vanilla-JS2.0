@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class=" tracking-wide leading-relaxed">
+  <div class="min-h-screen bg-background">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12 py-6">
+      <header class="flex items-center justify-between mb-5">
+        <div class="flex">
+          <button class="text-2xl">
+            <img src="assets/hamburger.svg" class="w-6 h-6" alt="Icon">
+          </button>
+          <nav class="space-y-1 text-sm uppercase tracking-wide mb-6 md:flex m-7 flex-row ml-0 hidden md:block">
+            <a href="" class="block ml-14">Home</a>
+            <a href="" class="block ml-14">Collection</a>
+            <a href="" class="block ml-14">New</a>
+
+        </div>
+
+        <button class="text-xl absolute left-41 md:left-1/2">
+          <img src="assets/logo.svg" class="w-6 h-6 mx-2" alt="Icon">
+        </button>
+
+        <div class="flex items-center gap-3">
+          <button class="size-10 rounded-full bg-text hidden md:block text-white flex items-center justify-center">
+            <img src="assets/wishlist.svg" class="w-6 h-6 mx-2" alt="Icon">
+          </button>
+          <button
+            class="size-10 rounded-2xl w-14 bg-text text-white flex items-center justify-center z-20 hidden md:block">Cart</button>
+          <button
+            class="size-10 rounded-full -ml-4 border border-border bg-surface flex items-center justify-center shadow-card">
+            <img src="assets/cart.svg" class="w-10 h-10" alt="Icon">
+          </button>
+
+          <button class="size-10 rounded-full bg-text text-white flex items-center justify-center">
+            <img src="assets/account.svg" class="w-3 h-3" alt="Icon">
+          </button>
+        </div>
+        </nav>
+      </header>
+
+      <nav class="space-y-1 text-sm uppercase tracking-wide mb-6">
+        <a href="" class="block mb-3">Men</a>
+        <a href="" class="block mb-3">Women</a>
+        <a href="" class="block mb-3">Kids</a>
+      </nav>
+
+
+      <div class="flex items-center bg-secondary rounded-md xl:w-[300px] overflow-hidden mb-12">
+        <div class="px-4 pt-0.5 mb-1 text-text-muted "><img src="assets/search.svg" alt=""></div>
+
+        <input type="text" placeholder="" class="sm:w-full bg-transparent py-2 outline-none text-sm" />
+
+        <button class="px-4 text-sm text-text-muted border-l border-border xl:w-[300px] ">
+          Search
+        </button>
+      </div>
+
+      <section class="mb-10 md:flex">
+
+        <div class="grid grid-cols-5 grid-rows-5 gap-4">
+          <div class="col-span-2 row-span-4">
+            <div>
+
+              <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+                New<br />
+                Collection
+              </h1>
+
+              <p class="mt-3 text-text-muted">
+                Summer <br />
+                2024
+              </p>
+            </div>
+          </div>
+          <div class="col-span-3 row-span-5 col-start-3">
+            <div>
+              <section class="md:flex-row">
+                <div class="flex gap-4 overflow-x-auto pb-4 snap-x">
+
+                  <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+                    <img src="assets/img1.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+
+                    <div class="p-3 block md:hidden">
+                      <p class="text-xs text-text-muted">
+                        Cotton T-Shirt
+                      </p>
+
+                      <div class="flex justify-between items-end mt-1">
+                        <div>
+                          <h3 class="font-semibold text-sm font-sans">
+                            Full Sleeve
+                          </h3>
+                        </div>
+
+                        <span class="font-semibold">
+                          $199
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+                    <img src="assets/img2.png" class="h-52 w-full object-cover md:h-auto" alt="" />
+
+                    <div class="p-3 block md:hidden">
+                      <p class="text-xs text-text-muted">
+                        Cotton T-Shirt
+                      </p>
+
+                      <div class="flex justify-between items-end mt-1">
+                        <h3 class="font-semibold text-sm font-sans">
+                          Full Sleeve
+                        </h3>
+
+                        <span class="font-semibold">
+                          $199
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+
+                </div>
+
+              </section>
+
+
+
+            </div>
+          </div>
+          <div class="col-span-2 row-start-5">
+            <div class="">
+              <button class="flex items-center gap-6 border bg-secondary border-text px-6 py-3 uppercase tracking-wide">
+                Go To Shop
+                <span class="text-xl"><img src="assets/arrow.svg" alt=""></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <section class="pt-1">
+        <div class="flex">
+
+          <div>
+            <h1 class="font-heading text-5xl leading-[0.85] uppercase color-text">
+              New<br />
+              This Week
+            </h1>
+          </div>
+
+
+          <div class=" hidden md:block absolute right-0 pt-10 underline text-text-muted ">
+            <a href="">See All</a>
+          </div>
+        </div>
+        <section class="md:flex-row">
+          <div class="flex gap-4 overflow-x-auto snap-x mt-10">
+
+            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+              <img src="assets/img3.png" class="h-80 w-full object-cover" alt="" />
+
+              <div class="p-3 block">
+                <p class="text-xs text-text-muted">
+                  Cotton T-Shirt
+                </p>
+
+                <div class="flex justify-between items-end mt-1">
+                  <div>
+                    <h3 class="font-semibold text-sm font-sans">
+                      Full Sleeve
+                    </h3>
+                  </div>
+
+                  <span class="font-semibold">
+                    $199
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+              <img src="assets/img4.png" class="h-80 w-full object-cover" alt="" />
+
+              <div class="p-3 block ">
+                <p class="text-xs text-text-muted">
+                  Cotton T-Shirt
+                </p>
+
+                <div class="flex justify-between items-end mt-1">
+                  <h3 class="font-semibold text-sm font-sans">
+                    Full Sleeve
+                  </h3>
+
+                  <span class="font-semibold">
+                    $199
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+              <img src="assets/img5.png" class="h-80 w-full object-cover " alt="" />
+
+              <div class="p-3 block ">
+                <p class="text-xs text-text-muted">
+                  Cotton T-Shirt
+                </p>
+
+                <div class="flex justify-between items-end mt-1">
+                  <h3 class="font-semibold text-sm font-sans">
+                    Full Sleeve
+                  </h3>
+
+                  <span class="font-semibold">
+                    $199
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="min-w-[170px] bg-surface border border-border shadow-card snap-start">
+              <img src="assets/img6.png" class="h-80 w-full object-cover " alt="" />
+
+              <div class="p-3 block ">
+                <p class="text-xs text-text-muted">
+                  Cotton T-Shirt
+                </p>
+
+                <div class="flex justify-between items-end mt-1">
+                  <h3 class="font-semibold text-sm font-sans">
+                    Full Sleeve
+                  </h3>
+
+                  <span class="font-semibold">
+                    $199
+                  </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </section>
+
+        <div class="p-8 cursor-pointer">
+          <img src="assets/pagination.svg" alt="" class=" absolute left-35 md:left-160">
+        </div>
+      </section>
+
+      <section class="pt-10">
+        <!-- Heading -->
+        <header class="mb-12">
+          <h1 class="font-heading text-5xl md:text-7xl uppercase leading-[0.85] color-text">
+            XIV <br />
+            Collections <br />
+            23-24
+          </h1>
+        </header>
+
+        <!-- Filters -->
+        <div class="mb-8 flex flex-col gap-6 border-b border-border pb-4 md:flex-row md:items-end md:justify-between">
+          <!-- Categories -->
+          <nav class="flex gap-8 text-text-muted">
+            <button class="color-text">All</button>
+            <button>Men</button>
+            <button>Women</button>
+            <button>KID</button>
+          </nav>
+
+          <!-- Sorting -->
+          <div class="flex gap-16 text-sm">
+            <div>
+              <p class="mb-2 color-text">Filters(+)</p>
+            </div>
+
+            <div class="text-text-muted">
+              <p class="mb-2 color-text">Sorts(-)</p>
+              <button class="block">Less to more</button>
+              <button class="block">More to Less</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="bg-surface border border-border shadow-card overflow-hidden">
+            <img src="assets/img7.png" alt="" class="h-[450px] w-full object-cover" />
+
+            <div class="p-4">
+              <p class="text-sm text-text-muted">
+                Cotton T-Shirt
+              </p>
+
+              <div class="mt-2 flex items-center justify-between">
+                <h3 class="font-semibold font-sans">
+                  Full Sleeve
+                </h3>
+
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-surface border border-border shadow-card overflow-hidden">
+            <img src="assets/img1.png" alt="" class="h-[450px] w-full object-cover" />
+
+            <div class="p-4">
+              <p class="text-sm text-text-muted">
+                Cotton T-Shirt
+              </p>
+
+              <div class="mt-2 flex items-center justify-between">
+                <h3 class="font-semibold font-sans">
+                  Full Sleeve
+                </h3>
+
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-surface border border-border shadow-card overflow-hidden">
+            <img src="assets/img9.png" alt="" class="h-[450px] w-full object-cover" />
+
+            <div class="p-4">
+              <p class="text-sm text-text-muted">
+                Cotton T-Shirt
+              </p>
+
+              <div class="mt-2 flex items-center justify-between">
+                <h3 class="font-semibold font-sans">
+                  Full Sleeve
+                </h3>
+
+                <span class="font-semibold">
+                  $199
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-background py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-light uppercase tracking-wide">
+              Our Approach to Fashion Design
+            </h2>
+
+            <p class="max-w-2xl mx-auto mt-4 text-sm text-gray-500">
+              At Elegant Vogue, we blend creativity with craftsmanship to create
+              fashion that transcends trends and stands the test of time.
+            </p>
+          </div>
+
+          <div class="flex items-end gap-4 md:gap-8">
+
+            <div class="flex-1">
+              <img src="assets/img10.png" class="w-full aspect-[3/5] object-cover" />
+            </div>
+
+
+            <div class="flex-1 pb-10">
+              <img src="assets/img11.png" class="w-full aspect-[3/4] object-cover" />
+            </div>
+
+            <div class="flex-1">
+              <img src="assets/img1.png" class="w-full aspect-[3/6] object-cover" />
+            </div>
+
+
+            <div class="flex-1 pb-6">
+              <img src="assets/img13.png" class="w-full aspect-square object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+
+  <footer class="bg-secondary border-t border-gray-100 ">
+    <div class="mx-w-max mx-auto px-8 py-24">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+
+
+        <div class="space-y-16">
+          <div>
+            <h4 class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">
+              Info
+            </h4>
+
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="text-sm uppercase text-gray-700 hover:text-black transition">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-sm uppercase text-gray-700 hover:text-black transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-sm uppercase text-gray-700 hover:text-black transition">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">
+              Languages
+            </h4>
+
+            <ul class="space-y-2">
+              <li><a href="" class="text-sm text-gray-600">ENG</a></li>
+              <li><a href="" class="text-sm text-gray-600">ESP</a></li>
+              <li><a href="" class="text-sm text-gray-600">SVE</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center text-center">
+          <span class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">
+            Developer
+          </span>
+
+          <div class="flex items-start gap-4">
+            <div>
+              <h2 class="text-6xl md:text-7xl font-black leading-none tracking-tight">
+                ADI
+              </h2>
+              <h2 class="text-6xl md:text-7xl font-black leading-none tracking-tight">
+                AFFAN
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <h4 class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">
+            Contacts
+          </h4>
+
+          <ul class="space-y-2 *:text-sm uppercase text-gray-600 hover:text-text transition-all duration 50">
+            <li><a href="">Email</a></li>
+            <li><a href="">Phone</a></li>
+            <li><a href="">Github</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-24 pt-8 border-t border-primary flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-gray-400">
+          © 2026 — copyright
+        </p>
+
+        <a href="" class="text-xs text-gray-400 hover:text-black transition">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
