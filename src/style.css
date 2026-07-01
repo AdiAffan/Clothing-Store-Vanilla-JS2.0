@@ -2,7 +2,7 @@
 
 @theme {
   /* Colors */
-  --color-primary: #000;
+  --color-primary: #282828;
   --color-primary-light: #3b82f6;
   --color-primary-dark: #1d4ed8;
 
@@ -12,7 +12,7 @@
   --color-background: #f8f8f8;
   --color-surface: #ffffff;
 
-  --color-text: #000;
+  --color-text: var(--color-primary);
   --color-text-muted: #64748b;
 
   --color-border: #e2e8f0;
